@@ -1,4 +1,11 @@
-# Redmi File Uploader
+
+# Think Academies Frontend
+
+## 🔗 Live Link
+[Click here to visit the live site](https://ecommercesitehtml.netlify.app/)
+
+
+![image](https://github.com/user-attachments/assets/19c3d152-8503-46cd-863b-82c3af49f851)
 
 A modern web application for handling file uploads with validation and error handling.
 
