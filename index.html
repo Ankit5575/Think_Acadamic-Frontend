@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Store</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/carousel.css">
+    <link rel="stylesheet" href="styles/spinner.css">
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div class="spinner-container">
+        <div class="spinner">
+            <div class="spinner-segment segment-1"></div>
+            <div class="spinner-segment segment-2"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">Store</div>
+        <button class="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero">
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="images/slide1.jpg" 
+                         srcset="images/slide1-small.jpg 600w,
+                                images/slide1-medium.jpg 1200w,
+                                images/slide1.jpg 1920w"
+                         sizes="100vw"
+                         alt="Featured Product 1">
+                    <div class="carousel-content">
+                        <h2>New Arrivals</h2>
+                        <p>Check out our latest collection</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/slide1-medium.jpg"
+                          
+                         sizes="100vw"
+                         alt="Featured Product 2">
+                    <div class="carousel-content">
+                        <h2>Summer Sale</h2>
+                        <p>Up to 50% off on selected items</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/slide3.jpg"
+                          
+                         sizes="100vw"
+                         alt="Featured Product 3">
+                    <div class="carousel-content">
+                        <h2>Free Shipping</h2>
+                        <p>On orders over $50</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn prev" aria-label="Previous slide">❮</button>
+            <button class="carousel-btn next" aria-label="Next slide">❯</button>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/product1.jpeg"
+                    
+                     sizes="(max-width: 768px) 100vw, 300px"
+                     alt="Product 1" class="product-image">
+                <h3>Product 1</h3>
+                <p>$99.99</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/product2.jpeg"
+                     
+                     sizes="(max-width: 768px) 100vw, 300px"
+                     alt="Product 2" class="product-image">
+                <h3>Product 2</h3>
+                <p>$79.99</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/product3.jpeg"
+                      
+                     sizes="(max-width: 768px) 100vw, 300px"
+                     alt="Product 3" class="product-image">
+                <h3>Product 3</h3>
+                <p>$89.99</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/product4.jpeg"
+                      
+                     sizes="(max-width: 768px) 100vw, 300px"
+                     alt="Product 4" class="product-image">
+                <h3>Product 4</h3>
+                <p>$69.99</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@store.com</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Address: 123 Store St, City, Country</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Return Policy</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 E-Commerce Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Enhanced Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-header">
+            <div class="lightbox-counter">Image <span id="current-image">1</span> of <span id="total-images">4</span></div>
+            <div class="lightbox-controls">
+                <button class="lightbox-zoom-out" aria-label="Zoom out">−</button>
+                <button class="lightbox-zoom-reset" aria-label="Reset zoom">100%</button>
+                <button class="lightbox-zoom-in" aria-label="Zoom in">+</button>
+                <button class="lightbox-fullscreen" aria-label="Toggle fullscreen">⛶</button>
+                <button class="lightbox-close" aria-label="Close lightbox">×</button>
+            </div>
+        </div>
+
+        <div class="lightbox-main">
+            <button class="lightbox-nav prev" aria-label="Previous image">❮</button>
+            <div class="lightbox-content">
+                <div class="lightbox-loading">
+                    <div class="loading-spinner"></div>
+                </div>
+                <div class="lightbox-error">
+                    Failed to load image. Click to retry.
+                </div>
+                <div class="lightbox-image-container">
+                    <img src="" alt="" id="lightbox-image" draggable="false">
+                </div>
+            </div>
+            <button class="lightbox-nav next" aria-label="Next image">❯</button>
+        </div>
+
+        <div class="lightbox-footer">
+            <div class="lightbox-caption"></div>
+            <div class="lightbox-thumbnails">
+                <button class="thumbnail-nav prev" aria-label="Previous thumbnails">❮</button>
+                <div class="thumbnail-container"></div>
+                <button class="thumbnail-nav next" aria-label="Next thumbnails">❯</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Preload Container (hidden) -->
+    <div id="preload-container" style="display: none;" aria-hidden="true"></div>
+
+    <script src="js/lightbox.js"></script>
+</body>
+</html> 
